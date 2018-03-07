@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="weatherHelper.js"></script>
+        <script src="skycons.js"></script>
+    </head>
+
+    <body onload="getLocation()">
+        <div class="container-fluid">
+            <div class="pageOne">
+                <div class="row">
+                    <div class=" col-md-offset-3 col-md-6">
+                        <div class="btn-lg text-center">
+                            <h1 id= "title">FreeCodeCamp</h1>
+                            <h1 id= "title">Weather App</h1>
+                            <!-- <br /> -->
+                            <h2 id="location"></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="col-md-offset-3 col-md-1">
+                        <span class="btn-md">
+                            <h2 id="summary"></h2>
+                        </span>
+                    </span>
+                    <span class="col-md-offset-1 col-md-1">
+                        <span class="btn-md text-center">
+                        <canvas id="icon" width="90" height="90"></canvas>
+                        </span>
+                    </span>
+                    <span class="col-md-offset-1 col-md-1">
+                        <span class="btn-md text-center">
+                            <h2 id="temperature"></h2>
+                            <!-- Rounded switch -->
+                            <label class="switch" >
+                                <input class="toggle" type="checkbox" onClick= "changeUnit()">
+                                <span class="slider round"></span>
+                            </label>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
